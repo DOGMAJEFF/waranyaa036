@@ -1,0 +1,66 @@
+main {
+    padding: 30px 5%;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+    color: var(--purple-pastel);
+    margin-bottom: 20px;
+}
+
+main iframe {
+    width: 30%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    margin-bottom: 20px;
+}
+
+main p.slogan {
+    font-size: 1.2em;
+    color: #666;
+}
+/* เอฟเฟกต์เมื่อ main ปรากฏ */
+main {
+    animation: fadeSlideUp 1s ease-out;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect บนวิดีโอหรือรูป */
+main iframe,
+.about-image img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main iframe:hover,
+.about-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Glow effect บนชื่อร้านหรือสโลแกน */
+main h1,
+main p.slogan {
+    position: relative;
+    animation: textGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 5px var(--pink-pastel), 0 0 10px var(--blue-pastel);
+    }
+    100% {
+        text-shadow: 0 0 10px var(--purple-pastel), 0 0 20px var(--blue-pastel);
+    }
+}
+

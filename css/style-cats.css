@@ -1,0 +1,47 @@
+.cat-gallery {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 คอลัมน์ */
+    gap: 20px; /* ระยะห่างระหว่างรูป */
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cat-grid img {
+    width: 100%;
+    height: 250px;           /* กำหนดความสูงเท่ากัน */
+    object-fit: cover;       /* ครอบเต็มพื้นที่โดยไม่บิดเบี้ยว */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cat-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.cat-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.cat-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 214, 232, 0.7); /* พาสเทลชมพูโปร่งแสง */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cat-card:hover .cat-info {
+    opacity: 1;
+}
