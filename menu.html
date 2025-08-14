@@ -1,73 +1,80 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>คาเฟ่แมว</title>
-<link rel="stylesheet" href="css/theme.css">
-<link rel="stylesheet" href="css/style-menu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนูและเครื่องดื่ม</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style-menu.css">
 </head>
 <body>
 
-<header>
-    <img src="picture/cat2.webp" alt="โลโก้ร้าน" class="logo">
-    <nav>
-        <ul>
-            <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="about.html">เกี่ยวกับเรา</a></li>
-            <li><a href="cats.html">น้องแมว</a></li>
-            <li><a href="menu.html">เมนูและเครื่องดื่ม</a></li>
-            <li><a href="activities.html">กิจกรรม</a></li>
-            <li><a href="donate.html">บริจาค</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <img src="picture/cat2.webp" alt="โลโก้ร้าน" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="about.html">เกี่ยวกับ</a></li>
+                <li><a href="cats.html">น้องแมว</a></li>
+                <li><a href="menu.html" class="active">เมนูและเครื่องดื่ม</a></li>
+                <li><a href="activities.html">กิจกรรม</a></li>
+                <li><a href="donate.html">บริจาค</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <div class="menu-grid">
-        <div class="menu-card">
-            <img src="picture/w1.jpg" alt="คาปูชิโน่">
-            <div class="menu-info">คาปูชิโน่</div>
-        </div>
-        <div class="menu-card">
-            <img src="picture/c2.jpg" alt="คุกกี้เนย">
-            <div class="menu-info">คุกกี้เนย</div>
-        </div>
-        <div class="menu-card">
-            <img src="picture/w3.jpg" alt="น้ำส้ม">
-            <div class="menu-info">น้ำส้มสด</div>
-        </div>
-       <div class="menu-card">
-            <img src="picture/c4.webp" alt="ชีสเค้ก">
-            <div class="menu-info">ชีสเค้ก</div>
-        </div>
-        <div class="menu-card">
-            <img src="picture/w5.webp" alt="น้ำแตงโม">
-            <div class="menu-info">น้ำแตงโม</div>
-        </div>
-        <div class="menu-card">
-            <img src="picture/c1.webp" alt="เค้กช็อกโกแลต">
-            <div class="menu-info">เค้กช็อกโกแลต</div>
-        </div>
-        <div class="menu-card">
-            <img src="picture/w2.jpg" alt="ชาไทยเย็น">
-            <div class="menu-info">ชาไทยเย็น</div>
-        </div>
-        <div class="menu-card">
-            <img src="picture/c3.webp" alt="คัพเค้กวนิลา">
-            <div class="menu-info">คัพเค้กวนิลา</div>
-        </div>
-        <div class="menu-card">
-            <img src="picture/w4.png" alt="สตรอว์เบอร์รีสมูทตี้">
-            <div class="menu-info">สตรอว์เบอร์รีสมูทตี้</div>
-        </div>
-        <div class="menu-card">
-            <img src="picture/c5.jpg" alt="สตรอว์เบอร์รีชีสเค้ก">
-            <div class="menu-info">สตรอว์เบอร์รีชีสเค้ก</div>
-        </div>
-    </div>
-</main>
+    <main class="menu-page">
+        <section id="menu-highlights" class="main-section">
+            <div class="content-container">
+                <h2>เมนูแนะนำ</h2>
+                <div class="highlight-cards">
+                    <div class="menu-card">
+                        <img src="picture/c5.jpg" alt="เมนูไฮไลท์ 1">
+                        <h3>ครีมชีสสตอว์เบอรี่</h3>
+                        <p>สตอว์เบอรี่สดใหม่ทุกวัน</p>
+                        <span class="price">฿79</span>
+                    </div>
+                    <div class="menu-card">
+                        <img src="picture/w3.jpg" alt="เมนูไฮไลท์ 2">
+                        <h3>น้ำส้มคั้น</h3>
+                        <p>น้ำส้มคั้นสดๆ จากสวน</p>
+                        <span class="price">฿50</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<script src="js/script-menu.js"></script>
+        <section id="full-menu" class="main-section">
+            <div class="content-container">
+                <h2>รายการเมนูทั้งหมด</h2>
+                <div class="menu-categories">
+                    <div class="menu-category">
+                        <h3>เครื่องดื่มกาแฟ</h3>
+                        <ul>
+                            <li>ลาเต้ร้อน/เย็น <span class="price">฿90</span></li>
+                            <li>คาปูชิโน่ <span class="price">฿90</span></li>
+                            <li>อเมริกาโน่ <span class="price">฿80</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-category">
+                        <h3>ของหวาน</h3>
+                        <ul>
+                            <li>ชีสเค้กหน้าแมว <span class="price">฿120</span></li>
+                            <li>บราวนี่ <span class="price">฿85</span></li>
+                            <li>เค้กช็อกโกแลต <span class="price">฿100</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-category">
+                        <h3>อาหารว่าง</h3>
+                        <ul>
+                            <li>ครัวซองต์แฮมชีส <span class="price">฿95</span></li>
+                            <li>เฟรนช์ฟรายส์ <span class="price">฿70</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>

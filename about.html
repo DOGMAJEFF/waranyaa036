@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>เกี่ยวกับเรา - คาเฟ่แมว</title>
-<link rel="stylesheet" href="css/theme.css">
-<link rel="stylesheet" href="css/style-about.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับเรา</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style-about.css">
 </head>
 <body>
 
-<header>
-    <img src="picture/cat2.webp" alt="โลโก้ร้าน" class="logo">
-    <nav>
-        <ul>
-            <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="about.html">เกี่ยวกับ</a></li>
-            <li><a href="cats.html">น้องแมว</a></li>
-            <li><a href="menu.html">เมนูและเครื่องดื่ม</a></li>
-            <li><a href="activities.html">กิจกรรม</a></li>
-            <li><a href="donate.html">บริจาค</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <img src="picture/cat2.webp" alt="โลโก้ร้าน" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="about.html" class="active">เกี่ยวกับ</a></li>
+                <li><a href="cats.html">น้องแมว</a></li>
+                <li><a href="menu.html">เมนูและเครื่องดื่ม</a></li>
+                <li><a href="activities.html">กิจกรรม</a></li>
+                <li><a href="donate.html">บริจาค</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main class="about-page">
-    <div class="about-content">
-        <div class="about-image">
-            <img src="picture/cafe.jpg" alt="ภาพร้านคาเฟ่แมว">
-        </div>
-        <div class="about-text">
-            <h2>เกี่ยวกับเรา</h2>
-            <p>
-                คาเฟ่แมวของเราเป็นสถานที่ที่คนรักแมวสามารถมาพักผ่อน
-                ดื่มกาแฟและเครื่องดื่มหลากหลาย พร้อมเล่นกับน้องแมวสุดน่ารักในบรรยากาศอบอุ่น
-                เรามุ่งเน้นการดูแลน้องแมวให้มีสุขภาพดีและมีความสุข
-            </p>
-        </div>
-    </div>
+    <main class="about-page">
+        <section id="about-story" class="main-section">
+            <div class="content-container">
+                <h2>เรื่องราวของเรา</h2>
+                <div class="story-content">
+                    <img src="picture/tt.jpg" alt="Our story image" class="story-image">
+                    <p class="story-text">
+                        ที่คาเฟ่ของเราเริ่มต้นจากความรักที่มีต่อน้องแมวจรจัด 
+                        เราจึงตั้งใจสร้างพื้นที่ที่อบอุ่นและปลอดภัยให้น้องแมวได้มีบ้าน 
+                        และให้ผู้คนได้มาสัมผัสความน่ารักของพวกมันในบรรยากาศสบาย ๆ 
+                        พร้อมกับกาแฟหอมกรุ่นและขนมอร่อย ๆ
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about-gallery" class="main-section">
+            <div class="content-container">
+                <h2>ภาพบรรยากาศคาเฟ่</h2>
+                <div class="gallery">
+                    <img src="picture/u.jpg" alt="Gallery image 1" class="gallery-img">
+                    <img src="picture/i.jpg" alt="Gallery image 2" class="gallery-img">
+                    <img src="picture/a.jpg" alt="Gallery image 3" class="gallery-img">
+                </div>
+            </div>
+        </section>
+        
+        <section id="about-team" class="main-section">
+            <div class="content-container">
+                <h2>ทีมงานของเรา</h2>
+                <div class="team-cards">
+                    <div class="team-card">
+                        <img src="picture/me.jpg" alt="Owner photo" class="team-photo">
+                        <h3>เจ้าของร้าน</h3>
+                    </div>
 
-    <div class="contact-info">
-        <h3>ช่องทางการติดต่อ</h3>
-        <p><strong>เวลาเปิด-ปิด:</strong> จันทร์-ศุกร์ 10:00 - 20:00 น., เสาร์-อาทิตย์ 09:00 - 21:00 น.</p>
-        <p><strong>โทร:</strong> 081-234-5678</p>
-        <p><strong>Email:</strong> catcafe@example.com</p>
-        <p><strong>Facebook:</strong> <a href="#">facebook.com/catcafethailand</a></p>
-    </div>
-</main>
+                <div class="team-card">
+                    <img src="picture/jaemin.jpg" alt="Staff photo 1" class="team-photo">
+                    <h3>ทีมงาน</h3>
+                </div>
 
-<script src="js/script-about.js"></script>
+                    <div class="team-card">
+                        <img src="picture/hen.jpg" alt="Staff photo" class="team-photo">
+                        <h3>ทีมงาน</h3>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>

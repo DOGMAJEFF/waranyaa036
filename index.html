@@ -1,33 +1,89 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>คาเฟ่แมว</title>
-<link rel="stylesheet" href="css/theme.css">
-<link rel="stylesheet" href="css/style-index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คาเฟ่แมวของเรา - หน้าแรก</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style-index.css">
 </head>
 <body>
 
-<header>
-    <img src="picture/cat2.webp" alt="โลโก้ร้าน" class="logo">
-    <nav>
-        <ul>
-            <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="about.html">เกี่ยวกับเรา</a></li>
-            <li><a href="cats.html">น้องแมว</a></li>
-            <li><a href="menu.html">เมนูและเครื่องดื่ม</a></li>
-            <li><a href="activities.html">กิจกรรม</a></li>
-            <li><a href="donate.html">บริจาค</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <img src="picture/cat2.webp" alt="โลโก้ร้าน" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">หน้าแรก</a></li>
+                <li><a href="about.html">เกี่ยวกับ</a></li>
+                <li><a href="cats.html">น้องแมว</a></li>
+                <li><a href="menu.html">เมนูและเครื่องดื่ม</a></li>
+                <li><a href="activities.html">กิจกรรม</a></li>
+                <li><a href="donate.html">บริจาค</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <h1>MEOVV</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kV95F78Bho8?si=djJRgZVb41lPsk25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    <p class="slogan">"HOME IS WHERE THE CAT IS"</p>
-</main>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="content-container">
+                <h1 class="store-name">MEOVV</h1>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KRKnkK_m8CQ?si=TBawbYKgq0hraUs6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="slogan">"HOME IS WHERE THE CAT IS"</p>
+            </div>
+        </section>
 
-<script src="js/script-index.js"></script>
+        <section id="mini-about" class="mini-about main-section">
+            <div class="content-container">
+                <h2>เกี่ยวกับเรา</h2>
+                <div class="mini-about-content">
+                    <img src="picture/cafe.jpg" alt="ภาพร้านคาเฟ่แมว" class="mini-about-image">
+                    <div class="mini-about-text">
+                        <p>
+                            คาเฟ่แมวของเราเป็นสถานที่ที่คนรักแมวสามารถมาพักผ่อน 
+                            พร้อมกับเล่นกับน้องแมวสุดน่ารักในบรรยากาศอบอุ่น 
+                            ทุกอย่างเริ่มต้นจากความรักในน้องแมวจรจัด 
+                            เราจึงตั้งใจสร้างพื้นที่ที่อบอุ่นและปลอดภัยให้น้องแมวได้มีบ้าน
+                        </p>
+                        <a href="about.html" class="cta-button">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-menu" class="featured-menu main-section">
+            <div class="content-container">
+                <h2>เมนูแนะนำ</h2>
+                <div class="highlight-cards">
+                    <div class="menu-card">
+                        <img src="picture/c5.jpg" alt="เมนูไฮไลท์ 1">
+                        <h3>ชื่อเมนู 1</h3>
+                        <p class="price">฿79</p>
+                    </div>
+                    <div class="menu-card">
+                        <img src="picture/w3.jpg" alt="เมนูไฮไลท์ 2">
+                        <h3>ชื่อเมนู 2</h3>
+                        <p class="price">฿50</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="latest-event" class="latest-event main-section">
+            <div class="content-container">
+                <h2>กิจกรรมล่าสุด</h2>
+                <div class="event-card-home">
+                    <img src="picture/mimi.jpg" alt="กิจกรรมล่าสุด">
+                    <h3>วันเกิดน้องมีมี่</h3>
+                    <p class="event-date">วันที่: 19 สิงหาคม 2025</p>
+                    <a href="activities.html" class="cta-button">ดูรายละเอียด</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
